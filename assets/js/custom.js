@@ -10,17 +10,9 @@ $(window).on('load', function() {
 
 // --------header--------------
 $(document).ready(function() {
-	$('.toggle-btn').on('click', function(){
+	$('.toggle-btn, .close-menu, .menu-overlay-bg').on('click', function(){
 		$('.menu-part').toggleClass('active');
 		$('.menu-overlay-bg').toggleClass('active');
-	});
-	$('.close-menu').on('click', function(){
-		$('.menu-part').css({"left":'-100%'});
-		$('.overlay-bg').css({"opacity":'0', "visibility":'hidden'});
-	});
-	$('.overlay-bg').on('click', function(){
-		$('.menu-part').css({"left":'-100%'});
-		$(this).css({"opacity":'0', "visibility":'hidden'});
 	});
 });
 
