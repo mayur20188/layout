@@ -30,83 +30,76 @@
 </head>
 <body>
 
-<!--== Start loader Section ==-->
-<div class="preloader">
-    <div class="cube-wrapper">
-        <div class="cube-folding">
-            <span class="leaf1"></span>
-            <span class="leaf2"></span>
-            <span class="leaf3"></span>
-            <span class="leaf4"></span>
-        </div>
-        <span class="loading" data-name="Loading">Loading</span>
-    </div>
-</div>
-<!--== end loader Section ==--> 
-
-<!--== Start header Section ==-->
-<div class="layout">
-    <section style="background: #333333;height: 50px;">
-        <div class="header-top">
-            <div class="container">
-                <div class="d-flex">
-
-                </div>
+    <!-- loader -->
+    <div class="preloader">
+        <div class="cube-wrapper">
+            <div class="cube-folding">
+                <span class="leaf1"></span>
+                <span class="leaf2"></span>
+                <span class="leaf3"></span>
+                <span class="leaf4"></span>
             </div>
-        </div>
-    </section>
-    <section>
-        <header class="header-wrapper">
-            <div class="container">
-                <div class="d-flex">
-                    <div class="header-part">
-                        <div class="logo-part">
-                            <a href="javascript:;"></a>
-                        </div>
-                    </div>
-                    <div class="toggle-btn d-md-none">
-                        <a href="javascript:;"></a>
-                    </div>
-                    <div class="menu-part ml-auto">
-                        <nav class="nav-bar">
-                            <ul class="d-flex">
-                                <li>
-                                    <a href="javascript:;">Welcome</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </header>
-    </section>
-</div>
-<!--== end header Section ==-->
-  
-<!--== Start content Section ==-->
-<div class="layout" style="background-image: url(assets/images/background.jpg);background-position: center bottom -220px;background-repeat: no-repeat;background-size: cover;">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12" style="height: 215px;">
-                
-            </div>
+            <span class="loading" data-name="Loading">Loading</span>
         </div>
     </div>
-</div>
-<!--== end content Section ==-->
 
-<!--== Start Footer Section ==-->
-<!--== end Footer Section ==-->
 
-<!-- == jQuery Librery == -->
-<script src="assets/js/jquery-3.4.1.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src='assets/js/jquery.lazyload.min.js'></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/select2.full.min.js"></script>
-<script src="assets/js/swiper-slider.js"></script>
-<script src="assets/js/jquery.mCustomScrollbar.js"></script>
-<script src="assets/js/bootstrap-datepicker.min.js"></script>
-<script src="assets/js/custom.js"></script>
+    <!-- Header -->
+    <header class="header-wrapper">
+        <div class="container">
+            <div class="header-part">
+                <div class="logo-part">
+                    <a href="index.html">
+                        <img src="images/logo-shd.png" class="img-fluid" alt="">
+                    </a>
+                </div>
+                <div class="menu-part ml-auto">
+                    <a href="javascript:;" class="close-menu d-block d-md-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#131416" d="M193.94 256L296.5 153.44l21.15-21.15c3.12-3.12 3.12-8.19 0-11.31l-22.63-22.63c-3.12-3.12-8.19-3.12-11.31 0L160 222.06 36.29 98.34c-3.12-3.12-8.19-3.12-11.31 0L2.34 120.97c-3.12 3.12-3.12 8.19 0 11.31L126.06 256 2.34 379.71c-3.12 3.12-3.12 8.19 0 11.31l22.63 22.63c3.12 3.12 8.19 3.12 11.31 0L160 289.94 262.56 392.5l21.15 21.15c3.12 3.12 8.19 3.12 11.31 0l22.63-22.63c3.12-3.12 3.12-8.19 0-11.31L193.94 256z" class=""></path></svg>
+                    </a>
+                    <nav class="nav-bar">
+                        <ul class="d-md-flex">
+                            <li class="active"><a href="javascript:void(0);">Home</a></li>
+                            <li><a href="javascript:void(0);">About</a></li>
+                            <li><a href="javascript:void(0);">FAQs</a></li>
+                            <li><a href="javascript:void(0);">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="account-right d-flex align-items-center float-right">
+                    <ul class="d-flex">
+                        <li>
+                            <a href="javascript:void(0);" class="home-head-small-btn mr-25"><i class="fa fa-heart"></i></a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" class="home-head-small-btn toggle-cart-btn"><i class="fa fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                    <!-- <ul class="d-flex">
+                        <li>
+                            <a href="login.html" class="home-login-btn">Login</a>
+                        </li>
+                    </ul> -->
+                </div>
+                <div class="toggle-btn d-md-none">
+                    <a href="javascript:;"><i></i><i></i><i></i></a>
+                </div>
+                <div class="menu-overlay-bg"></div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--js -->
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src='assets/js/jquery.lazyload.min.js'></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/select2.full.min.js"></script>
+    <script src="assets/js/swiper-slider.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>

@@ -1,9 +1,30 @@
+// --------preloader--------------
 $(window).on('load', function() {
 	setTimeout(function() {
         $('.preloader').slideUp('slow');
       	$('.cube-wrapper').fadeOut();
     }, 1000);
 });
+
+
+
+// --------header--------------
+$(document).ready(function() {
+	$('.toggle-btn').on('click', function(){
+		$('.menu-part').toggleClass('active');
+		$('.menu-overlay-bg').toggleClass('active');
+	});
+	$('.close-menu').on('click', function(){
+		$('.menu-part').css({"left":'-100%'});
+		$('.overlay-bg').css({"opacity":'0', "visibility":'hidden'});
+	});
+	$('.overlay-bg').on('click', function(){
+		$('.menu-part').css({"left":'-100%'});
+		$(this).css({"opacity":'0', "visibility":'hidden'});
+	});
+});
+
+
 $(document).ready(function() {
 
 	// --------select2-------
