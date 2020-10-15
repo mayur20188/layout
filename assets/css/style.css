@@ -147,6 +147,10 @@ body{
     height: 36px;
     border-radius: 50%;
 }
+.user-dropdown-icon{
+    color: #fff;
+    font-size: 13px;
+}
 .user-header-name {
     color: #fff;
     position: relative;

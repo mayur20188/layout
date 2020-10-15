@@ -136,11 +136,27 @@
         background-color: #00AE86;
         color: #fff;
     }
+    .menu-part{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 575.98px) {
-    .user-header-name{
+    .user-header-name,
+    .user-dropdown-arrow{
         display: none;
+    }
+    .user-dropdown-icon {
+        color: #fff;
+        font-size: 13px;
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 50%;
+        color: #00ae86;
+        padding-top: 11px;
     }
 }
 
