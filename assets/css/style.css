@@ -391,3 +391,51 @@ body{
     padding: 3px 10px;
     display: inline-block;
 }
+
+
+
+/*-------default-content-------*/
+.default-content-area {
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.16);
+    border-radius: 6px;
+}
+.content-area {
+    margin-bottom: 30px;
+}
+.default-content-area h4 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.default-content-area h4 span {
+    color: #000;
+}
+.content-area h6 {
+    font-size: 15px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+.content-area ul {
+    padding-left: 20px;
+}
+.content-area li{
+    list-style: initial;
+}
+.content-area p, 
+.content-area li {
+    letter-spacing: 0.3px;
+    font-size: 14px;
+    color: #8e8c8c;
+    margin-bottom: 8px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.content-area a {
+    font-weight: 600;
+    color: #2660a4;
+}
