@@ -159,6 +159,11 @@
     .page-ath-content {
         width: 100%;
     }
+
+
+    .page-ath-center .page-ath-gfx{
+        display: block;
+    }
 }
 
 @media (max-width: 575.98px) {
@@ -186,7 +191,9 @@
 
 
 @media (max-width: 479.98px) {
-	
+	.page-ath-form{
+        padding: 30px 20px;
+    }
 }
 
 
