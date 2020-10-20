@@ -667,7 +667,7 @@ select{
     right: 15px;
     color: #C8C8C8;
 }
-.right-input-icon .left-icon {
+.left-input-icon .left-icon {
     position: absolute;
     bottom: 15px;
     left: 15px;
