@@ -33,17 +33,8 @@
 
     <!-- loader -->
     <div class="preloader">
-        <div class="cube-wrapper">
-            <div class="cube-folding">
-                <span class="leaf1"></span>
-                <span class="leaf2"></span>
-                <span class="leaf3"></span>
-                <span class="leaf4"></span>
-            </div>
-            <span class="loading" data-name="Loading">Loading</span>
-        </div>
+        <div id="svgPreloader" class="loader-icon animate__animated"></div>
     </div>
-
 
     <!-- Header -->
     <header class="header-wrapper">
@@ -107,6 +98,7 @@
                 </div>
                 <div class="toggle-btn d-md-none">
                     <a href="javascript:;"><i class="fa fa-bars"></i></a>
+                    <a href="javascript:;" class="toggle-btn ellipsis-line d-lg-none"><span class="middle-line"></span></a>
                 </div>
                 <div class="menu-overlay-bg"></div>
             </div>
@@ -115,13 +107,24 @@
 
 
     <div class="content-area-container">
-        <section>
+        <div class="home-banner bg-banner" style="background-image: url(assets/images/home-banner.jpg);">
+            <!-- <video id="myVideo" class="video-js vjs-default-skin" width="100%" height="100%" loop autoplay muted preload="auto" data-setup='{ }'>
+                <source src="assets/video/web-video.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a
+                >
+                </p>
+            </video> -->
             <div class="container">
-                <div class="row">
-                    
+                <div class="home-banner-content text-center">
+                    <h1>We bring people together Love unites them</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
 
     <footer>
@@ -149,12 +152,14 @@
     <script src="assets/js/jquery-3.4.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script src='assets/js/jquery.lazyload.min.js'></script>
+    <script src="assets/js/lottie.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/select2.full.min.js"></script>
     <script src="assets/js/swiper-slider.js"></script>
     <script src="assets/js/jquery.mCustomScrollbar.js"></script>
     <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/video-js.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 </html>
