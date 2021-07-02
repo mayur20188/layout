@@ -150,6 +150,16 @@ $(document).ready(function() {
 	};
 });
 
+$(window).on("load resize",function(){
+		layoutSpace();
+});
+function layoutSpace(){
+	var containerwidth = $(".container").innerWidth();
+	var windowWidth = $(window).innerWidth();	
+	var remainningWidth = (windowWidth - containerwidth) / 2;
+	$(".className").css("padding-left", remainningWidth + 'px');
+}
+
 function headerStuck(){
 	var headerHeight = jQuery('.header-wrapper');
 	var scroll = jQuery(window).scrollTop();

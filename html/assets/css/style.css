@@ -67,14 +67,20 @@
     position: relative;
 }
 .nav-bar > ul > li a {
+    font-size: 14px;
+    font-weight: 400;
     color: #fff;
     position: relative;
     display: block;
-    font-weight: 400;
-    letter-spacing: 0.3px;
-    border-radius: 3px;
-    font-size: 14px;
     padding: 5px 12px;
+}
+.header-sticky .nav-bar > ul > li a {
+    color: #C1C1C2;
+}
+.header-sticky .nav-bar > ul > li a:hover,
+.header-sticky .nav-bar > ul > li.active a{
+    color: #FF3761;
+    opacity: 1;
 }
 .nav-bar > ul > li a.live-now-menu {
     color: #ff3737;
