@@ -52,15 +52,6 @@
          url('../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
 }
 
-/*@font-face{ 
-	font-family: 'NoSpace';
-	src: url('../fonts/zerowidthspaces.eot');
-	src: url('../fonts/zerowidthspaces.eot?#iefix') format('embedded-opentype'),
-		 url('../fonts/zerowidthspaces.woff') format('woff'),
-		 url('../fonts/zerowidthspaces.ttf') format('truetype'),
-		 url('../fonts/zerowidthspaces.svg#NoSpace') format('svg');
-}*/
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* font-family: 'Roboto', sans-serif; */
 

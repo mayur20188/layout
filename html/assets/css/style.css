@@ -79,11 +79,11 @@
 }
 .header-sticky .nav-bar > ul > li a:hover,
 .header-sticky .nav-bar > ul > li.active a{
-    color: #FF3761;
+    color: #00ae86;
     opacity: 1;
 }
 .nav-bar > ul > li a.live-now-menu {
-    color: #ff3737;
+    color: #00AE86;
     font-weight: 700;
 }
 .account-right li:first-child{
@@ -132,6 +132,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
+}
+.header-sticky .header-user-dropdown{
+    color: #C1C1C2;
 }
 .user-header-image {
     width: 36px;
@@ -139,11 +143,9 @@
     border-radius: 50%;
 }
 .user-dropdown-icon{
-    color: #fff;
     font-size: 13px;
 }
 .user-header-name {
-    color: #fff;
     position: relative;
     font-weight: 400;
     letter-spacing: 0.3px;
@@ -158,7 +160,6 @@
 }
 .user-dropdown-arrow{
     font-size: 12px;
-    color: #fff;
 }
 .header-profile-dropdown .dropdown-menu:before {
     background-image: url(../images/dropdown-arrow.png);
