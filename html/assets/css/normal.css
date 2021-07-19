@@ -1,11 +1,5 @@
-@font-face{ 
-    font-family: 'Montserrat-Black';
-    src: url('../fonts/Montserrat-Black/Montserrat-Black.eot');
-    src: url('../fonts/Montserrat-Black/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Montserrat-Black/Montserrat-Black.woff') format('woff'),
-         url('../fonts/Montserrat-Black/Montserrat-Black.ttf') format('truetype'),
-         url('../fonts/Montserrat-Black/Montserrat-Black.svg#Montserrat-Black') format('svg');
-}
+@charset "utf-8";
+/* CSS Document */
 
 @font-face{ 
     font-family: 'Montserrat-Bold';
@@ -14,15 +8,6 @@
          url('../fonts/Montserrat-Bold/Montserrat-Bold.woff') format('woff'),
          url('../fonts/Montserrat-Bold/Montserrat-Bold.ttf') format('truetype'),
          url('../fonts/Montserrat-Bold/Montserrat-Bold.svg#Montserrat-Bold') format('svg');
-}
-
-@font-face{ 
-    font-family: 'Montserrat-ExtraBold';
-    src: url('../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.eot');
-    src: url('../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.woff') format('woff'),
-         url('../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.ttf') format('truetype'),
-         url('../fonts/Montserrat-ExtraBold/Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg');
 }
 
 @font-face{ 
@@ -43,14 +28,6 @@
          url('../fonts/Montserrat-Regular/Montserrat-Regular.svg#Montserrat-Regular') format('svg');
 }
 
-@font-face{ 
-    font-family: 'Montserrat-SemiBold';
-    src: url('../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot');
-    src: url('../fonts/Montserrat-SemiBold/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Montserrat-SemiBold/Montserrat-SemiBold.woff') format('woff'),
-         url('../fonts/Montserrat-SemiBold/Montserrat-SemiBold.ttf') format('truetype'),
-         url('../fonts/Montserrat-SemiBold/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* font-family: 'Roboto', sans-serif; */
@@ -889,7 +866,6 @@ img.vert-move {
         min-width: 400px;
     }
 }
-
 
 @media (max-width: 767px){
 

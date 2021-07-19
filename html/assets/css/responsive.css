@@ -76,10 +76,8 @@
 }
 
 @media (max-width: 767.98px) {
-    .account-right {
-        margin-left: auto;
-    }
-    .menu-part {
+
+    .menu-right-part {
         position: fixed;
         width: 250px;
         height: 100vh;
@@ -93,8 +91,28 @@
         transition: 0.5s;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     }
-    .menu-part.active{
+    .menu-right-part.active{
     	right: 0;
+    }
+    .menu-top-part{
+        position: absolute;
+        width: 95%;
+        top: 80%;
+        background: #fff;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        overflow-x: hidden;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    .menu-top-part.active{
+       top: 100%;
+       opacity: 1;
+       visibility: visible;
     }
     .close-menu {
         position: absolute;
@@ -170,15 +188,100 @@
         padding-left: 28px;
         height: 50px;
     }
+    .mobile-toggle-btn {
+        position: relative;
+        width: 25px;
+        margin-left: 10px;
+    }
+    .mobileNav-wrapper {
+        display: block;
+    }
+    .mobileNav-toggle {
+        top: 50%;
+        left: 50%;
+        transform-origin: center;
+        transform: translate(-50%,-50%);
+    }
+    .mobileNav-wrapper.active .mobileNav-toggle {
+        transition-delay: .2s;
+        transform: translate(-50%,-50%) rotate(135deg);
+    }
+    .mobileNav-toggle, .mobileNav-toggle:after, .mobileNav-toggle:before {
+        border-radius: 1px;
+        height: 2px;
+        width: 20px;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        transition: all 225ms ease-in-out;
+    }
+    .header-sticky .mobileNav-toggle, .header-sticky .mobileNav-toggle:after, .header-sticky .mobileNav-toggle:before{
+        background-color: #00AE86;
+    }
+
+    .mobileNav-toggle:after, .mobileNav-toggle:before {
+        content: "";
+        top: 0;
+        left: 0;
+    }
+    .mobileNav-toggle:before {
+        animation: m .8s cubic-bezier(0,1.02,1,1.01) forwards;
+    }
+    .mobileNav-toggle:after {
+        animation: n .8s cubic-bezier(0,1.02,1,1.01) forwards;
+    }
+    .mobileNav-wrapper.active .mobileNav-toggle:before {
+        animation: k .8s cubic-bezier(0,1.02,1,1.01) forwards;
+    }
+    .mobileNav-wrapper.active .mobileNav-toggle:after {
+        animation-delay: .8s;
+        animation: l .8s cubic-bezier(0,1.02,1,1.01) forwards;
+    }
+    @keyframes m{
+        0%{transform:translateY(0)}
+        30%{transform:translateY(0)}
+        to{transform:translateY(7px)}
+    }
+    @keyframes n{
+        0%{transform:translateY(0) rotate(90deg)}
+        30%{transform:translateY(0)}
+        to{transform:translateY(-7px)}
+    }
+    @keyframes k{
+        0%{transform:translateY(6px)}
+        30%{transform:translateY(0)}
+        to{transform:translateY(0)}
+    }
+    @keyframes l{
+        0%{transform:translateY(-6px)}
+        30%{transform:translateY(0)}
+        to{transform:translateY(0) rotate(90deg)}
+    }
+
     .header-sticky .toggle-btn a:before,
     .header-sticky .toggle-btn a:after,
     .header-sticky .toggle-btn a .middle-line{
         background-color: #3C393A;
     }
-    .nav-bar > ul > li a {
+    .menu-top-part .nav-bar{
+        padding: 10px 0;
+    }
+    .nav-bar > ul > li > a {
         padding: 8px 18px;
-        color: #00AE86;
+        color: #9a9a9a;
         font-weight: 500;
+    }
+    .menu-top-part .nav-bar > ul > li > a {
+        display: block;
+        color: #9a9a9a;
+    }
+    .nav-bar > ul > li > a:not(:only-child):after{
+        transform: translateY(-50%) rotate(0deg);
+        right: 4px;
+        color: #9a9a9a;
+    }
+    .nav-bar > ul > li.active > a:not(:only-child):after{
+        transform: translateY(-50%) rotate(90deg);
     }
     .nav-bar > ul > li{
         margin-left: 0px;
@@ -196,15 +299,30 @@
     .header-btn i{
         display: inline-block;
     }
-    .nav-bar > ul > li.active a{
+    .nav-bar > ul > li.active > a{
+        
+    }
+    .menu-top-part .nav-bar > ul > li.active > a{
+        background-color: transparent;
+        color: #00AE86;
+    }
+    .account-right {
+        margin-left: auto;
+    }
+    .header-sticky .user-dropdown-icon{
         background-color: #00AE86;
         color: #fff;
     }
-    .menu-part{
-        margin-left: 0px;
-        margin-right: 0px;
+    .sub-menu{
+        position: relative;
+        top: auto;
+        right: auto;
+        box-shadow: none;
+        padding: 0 10px 0 20px;
     }
-
+    .sub-menu ul {
+        padding: 0;
+    }
 
     /*---login----*/
     .page-ath-gfx {
